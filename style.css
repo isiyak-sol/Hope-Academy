@@ -1,0 +1,402 @@
+* {
+	
+}
+
+body {
+	font: 16px/1.5 'Arial';
+	background-color: #f4f4f4;
+	margin: 0;
+}
+
+.container {
+	width: 85%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header#main-header {
+	width: 100%;
+	min-height: 95vh;
+	/*background-color: #333;*/
+	padding: 25px 0 15px;
+	margin-bottom: 60px;
+	background-image: url('./images/home.jpg');
+	background-size: cover;
+	position: relative;
+}
+
+header#main-header::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.9);
+}
+
+.header-logo-and-nav {
+	position: relative;
+	z-index: 2;
+}
+
+#my-logo {
+	float: left;
+	z-index: 1;
+}
+
+#my-logo h1 {
+	margin: 0;
+	color: #fff;
+	font-size: 35px;
+	background-color: #000;
+	border: 2px solid #fff;
+	padding: 0 15px;
+	border-radius: 30px;
+}
+
+#my-logo span {
+	color: darkorange;
+}
+
+header nav {
+	float: right;
+	margin-top: 20px;
+}
+
+header nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+header nav ul li {
+	float: left;
+	display: inline-block;
+	padding: 0 15px;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	transition: 0.5s
+}
+
+header nav ul li a.active {
+	color: darkorange;
+	border-bottom: 1px solid #fff;
+}
+
+header nav ul li a:hover {
+	color: rgb(255,0,0);
+}
+
+header#main-header .header-content {
+	position: relative;
+	z-index: 2;
+	height: auto;
+	color: #fff;
+	margin: 200px auto 0;
+}
+
+header#main-header .header-content h1, p {
+	text-align: center;
+}
+
+header#main-header .header-content h1 {
+	font-size: 50px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+header#main-header .header-content p {
+	padding: 0 20px;
+	font-size: 20px;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+}
+
+header#main-header .home-button {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+header#main-header .home-button a {
+	text-decoration: none;
+}
+
+header#main-header .home-button .h-btn {
+	border: none;
+	outline: none;
+	padding: 12px 20px;
+	font-family: 'Arial';
+	font-size: 20px;
+	cursor: pointer;
+	color: #fff;
+	border-radius: 8px;
+	background: transparent;
+	border: 1px solid #fff;
+	transition: 0.5s;
+}
+
+header#main-header .home-button::before {
+	content: '-----';
+	color: #fff;
+}
+
+header#main-header .home-button::after {
+	content: '-----';
+	color: #fff;
+}
+
+header#main-header .home-button .h-btn:hover {
+	background-color: rgb(255,0,0);
+}
+
+header#main-header .social-links {
+	position: relative;
+	z-index: 2;
+	margin-top: 60px;
+	text-align: center;
+}
+
+header#main-header .social-links a {
+	text-decoration: none;
+	padding: 0 8px;
+}
+
+header#main-header .social-links img {
+	width: 3%;
+	border: 2px solid transparent;
+	transition: 0.5s;
+}
+
+header#main-header .social-links a img:hover {
+	border-radius: 100%;
+	border: 2px solid #fff;
+}
+
+section#home-section h1 {
+	font-size: 40px;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+section#home-section p#head-para {
+	font-size: 20px;
+	margin-bottom: 50px;
+	color: #444;
+}
+
+section#home-section article#home-section-col {
+	float: left;
+	text-align: center;
+	width: 30%;
+	box-sizing: border-box;
+	margin-bottom: 60px;
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 25px 25px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+section#home-section article#home-section-col:not(:last-child) {
+		margin-right: 56px;
+}
+
+section#home-section article#home-section-col h1 {
+	font-size: 25px;
+	margin: 10px 0;
+}
+
+section#home-section article#home-section-col p {
+	font-size: 18px;
+	color: #222;
+}
+
+section#home-section article#home-section-col img {
+	width: 30%;
+	margin: auto;
+	display: block;
+}
+
+.clearfix {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/*................book-store.................*/
+header#book-header {
+	width: 100%;
+	min-height: 95vh;
+	/*background-color: #333;*/
+	padding: 25px 0 15px;
+	margin-bottom: 0;
+	background-image: url('./images/material-back.jpg');
+	background-size: cover;
+	position: relative; 
+}
+
+header#book-header::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.75);
+}
+.material-head {
+	position: relative;
+	z-index: 2;
+	color: #fff;
+	margin-top: 150px;
+}
+
+.material-head h1 {
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.material-head p {
+	font-size: 20px;
+	margin-bottom: 50px;
+	text-align: unset;
+	font-size: 18px;
+}
+
+.material-row {
+	margin:  25px auto;
+	columns: #fff;
+}
+
+#material-col {
+	position: relative;
+	z-index: 2;
+	float: left;
+	text-align: center;
+	width: 30%;
+	box-sizing: border-box;
+	margin: 15px;
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 25px 25px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+
+#material-col .m-btn {
+	padding: 8px 40px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	background-color: rgb(255,0,0);
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.m-btn:hover {
+	border: 1px solid #fff;
+	opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	background-color: rgb(0, 0, 51);
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+footer h2 {
+	float: left;
+	font-size: 20px;
+	margin-left: 220px;
+	margin-bottom: 0;
+	margin-top: 15px;
+	color: orange;
+}
+
+footer .form {
+	float: right;
+	margin-top: 5px;
+	margin-right: 220px;
+}
+
+footer .form input[type=email] {
+	padding: 12px 0 8px;
+	width: 260px;
+	font-size: 16px;
+	color: #fff;
+	background-color: transparent;
+	border-bottom: 1px solid #fff;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	transition: 0.5s;
+}
+
+::placeholder {
+	color: #fff;
+}
+
+footer .form .f-btn {
+	padding: 7px 10px;
+	font-family: 'Arial';
+	font-size: 20px;
+	margin: 0;
+	background-color: rgb(255,0,0);
+	color: #fff;
+	border: 1px solid transparent;
+	outline: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+footer .form input[type=email]:focus {
+	border-bottom: 1px solid rgb(255,0,0);
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	outline: none;
+}
+
+footer .form .f-btn:hover {
+	border: 1px solid #fff;
+	opacity: 0.8;
+}
